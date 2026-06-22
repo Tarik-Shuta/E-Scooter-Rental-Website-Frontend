@@ -1,75 +1,40 @@
-# React + TypeScript + Vite
+E-Scooter Rental Website Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive frontend application for an E-Scooter Rental System. The platform allows users to browse available e-scooters, view rental information, manage their accounts, and enjoy a smooth rental experience through an intuitive user interface.
 
-Currently, two official plugins are available:
+This project was developed as a frontend solution for an E-Scooter Rental platform. The goal is to provide users with a fast, user-friendly, and visually appealing interface for renting electric scooters in urban environments.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application focuses on:
 
-## React Compiler
+User-friendly navigation
+Map API
+Responsive design for desktop and mobile devices
+Easy scooter browsing and rental process
+Modern UI/UX principles
+Clean and maintainable code structure
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+E-scooter rental services have become increasingly popular as an eco-friendly transportation option, and this project aims to simulate a real-world rental platform.
 
-Note: This will impact Vite dev & build performances.
+Features
+Home page with promotional content
+Browse available e-scooters
+Show availabe e-scooters on map
+Search and filter scooters
+Scooter details page
+User authentication pages
+Responsive design
+Rental booking interface
+Modern and intuitive navigation
+Attractive UI design
 
-## Expanding the ESLint configuration
+Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+HTML
+Vite
+CSS
+JavaScript
+React.js
+React Router
+Axios
+Tailwind CSS
+Context API / Redux
